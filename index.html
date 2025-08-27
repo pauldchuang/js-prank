@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Funny Prank</title>
+</head>
+<body>
+<h1>Welcome to my prank!</h1>
+<button>Try to click me!</button>
+
+<script>
+document.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("mouseover", () => {
+        btn.style.position = "absolute";
+        btn.style.left = Math.random() * (window.innerWidth - btn.offsetWidth) + "px";
+        btn.style.top = Math.random() * (window.innerHeight - btn.offsetHeight) + "px";
+    });
+});
+</script>
+</body>
+</html>
