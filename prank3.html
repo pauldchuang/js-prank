@@ -12,7 +12,17 @@ body { font-family: sans-serif; text-align: center; padding: 50px; font-size: 20
 <p>This is a normal paragraph that will soon become chaotic. 😁</p>
 
 <script>
-document.body.innerHTML = document.body.innerHTML.replace(/\w+/g, "😂");
+// Function to replace text nodes with emoji
+function replaceTextWithEmoji(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        node.textContent = node.textContent.replace(/\w+/g, "😂");
+    } else {
+        node.childNodes.forEach(replaceTextWithEmoji);
+    }
+}
+
+// Apply to body
+replaceTextWithEmoji(document.body);
 </script>
 </body>
 </html>
