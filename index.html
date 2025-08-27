@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Funny Prank</title>
+<title>Prank Portal</title>
+<style>body { font-family: sans-serif; padding: 50px; }</style>
 </head>
 <body>
-<h1>Welcome to my prank!</h1>
-<button>Try to click me!</button>
-
-<script>
-document.querySelectorAll("button").forEach(btn => {
-    btn.addEventListener("mouseover", () => {
-        btn.style.position = "absolute";
-        btn.style.left = Math.random() * (window.innerWidth - btn.offsetWidth) + "px";
-        btn.style.top = Math.random() * (window.innerHeight - btn.offsetHeight) + "px";
-    });
-});
-</script>
+<h1>Welcome to the Prank Portal 😎</h1>
+<ul>
+  <li><a href="prank0.html">Gotcha Alert Spam</a></li>
+  <li><a href="prank1.html">Dodging Buttons</a></li>
+  <li><a href="prank2.html">Upside-Down Page</a></li>
+  <li><a href="prank3.html">Emoji Text Replacement</a></li>
+</ul>
 </body>
 </html>

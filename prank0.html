@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gotcha Alert!</title>
+<style>
+body { font-family: sans-serif; text-align: center; padding: 50px; }
+</style>
+</head>
+<body>
+<h1>Welcome… or not! 😜</h1>
+<p>Try to ignore the popups… if you can!</p>
+
+<script>
+// Pops up every 3 seconds
+const prankInterval = setInterval(() => {
+    alert("Gotcha! 😜");
+}, 3000);
+
+// Optional: Stop after 30 seconds
+setTimeout(() => clearInterval(prankInterval), 30000);
+</script>
+</body>
+</html>
